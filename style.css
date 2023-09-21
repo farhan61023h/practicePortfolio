@@ -84,7 +84,7 @@
      background: white;
      bottom: -10px;
      left: 0;
-     width: 70%;
+     width: 0%;
      height: 50px;
      display: flex;
      justify-content: center;
@@ -155,7 +155,7 @@
      position: fixed;
      display: flex;
      justify-content: center;
-     /* bottom: 0px; */
+     bottom: -100px;
      align-items: center;
      left: 20%;
  }
@@ -176,7 +176,7 @@
          inset 30px 10px 35px 10px rgb(255 255 255/20%);
      background: #242931;
      border-radius: 20px;
-     animation: kimi 5s linear forwards infinite;
+     animation: kimi 8s linear forwards infinite;
  }
 
  @keyframes kimi {
@@ -226,7 +226,7 @@
          inset 30px 10px 35px 10px rgb(255 255 255/20%);
      background: #242931;
      border-radius: 50%;
-     animation: kini 5s linear forwards infinite;
+     animation: kini 8s linear forwards infinite;
  }
 
  @keyframes kini{
@@ -257,4 +257,67 @@
     100% {
         transform: translate(-50%, -50%) rotate(20deg);
     }
+ }
+
+ body.night{
+    color: white;
+    background: #242931 ;
+ }
+
+ body.night nav li{
+    color: white;
+ }
+
+ body.night .hero::before,
+ body.night .hero::after{
+    background: white;
+    box-shadow: 25px 15px 35px rgba(255, 255, 255, 0.25),
+         25px 15px 35px rgba(255, 255, 255, 0.25),
+         inset 5px 0px 10px rgba(255, 255, 255, 0.5),
+         inset -5px 5px 10px rgba(255, 255, 255, 0.5),
+         inset 30px 10px 35px 10px rgba(0, 0, 0, 0.2);
+ }
+
+ body.night .menu{
+    box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
+         25px 15px 35px rgb(0 0 0 / 25%),
+         inset 5px 0px 10px rgb(0 0 0/50%),
+         inset -5px 5px 10px rgb(0 0 0/50%),
+         inset 30px 10px 35px 10px rgb(255 255 255/20%);
+     background: #242931;
+ }
+
+ body.night .menu::before{
+    background: white;
+    box-shadow: 25px 15px 35px rgba(255, 255, 255, 0.25),
+         25px 15px 35px rgba(255, 255, 255, 0.25),
+         inset 5px 0px 10px rgba(255, 255, 255, 0.5),
+         inset -5px 5px 10px rgba(255, 255, 255, 0.5),
+         inset 30px 10px 35px 10px rgb(255 255 255/20%);
+ }
+
+ body.night .menu ion-icon{
+    background: #242931;
+    color: white;
+    box-shadow: 25px 15px 35px rgba(255, 255, 255, 0.25),
+    25px 15px 35px rgba(255, 255, 255, 0.25),
+    inset 5px 0px 10px rgba(255, 255, 255, 0.5),
+    inset -5px 5px 10px rgba(255, 255, 255, 0.5),
+    inset 30px 10px 35px 10px rgb(255 255 255/20%);
+ }
+ body.night .menu ion-icon:hover{
+    color: black;
+    background: white;
+    box-shadow: 25px 15px 35px rgba(255, 255, 255, 0.25),
+    25px 15px 35px rgba(255, 255, 255, 0.25),
+    inset 5px 0px 10px rgba(255, 255, 255, 0.5),
+    inset -5px 5px 10px rgba(255, 255, 255, 0.5),
+    inset 30px 10px 35px 10px rgb(255 255 255/20%);
+ }
+
+ .menu.active{
+    width: 70%;
+ }
+ .menu.active .menu-icon{
+    bottom: -10px;
  }
