@@ -1,8 +1,8 @@
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: monospace;
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: monospace;
  }
 
  /* @font-face {
@@ -10,182 +10,251 @@
     src: url();
  } */
 
- body{
-    color: #242931;
+ body {
+     color: #242931;
 
  }
 
- .hero{
-    width: 100%;
-    height: 100vh; 
-    position: relative;
-    overflow-x: hidden;
+ .hero {
+     width: 100%;
+     height: 100vh;
+     position: relative;
+     overflow-x: hidden;
  }
 
- .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 10%;
-    position: relative;
- }
- .logo{
-    font-size: 2.5rem;
+ .header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 40px 10%;
+     position: relative;
  }
 
- span{
-    color: #ffb923;
+ .logo {
+     font-size: 2.5rem;
  }
 
- .nav{
-    display: flex;
-    list-style: none;
+ span {
+     color: #ffb923;
  }
 
- .nav li{
-    padding: 10px 30px;
-    margin: 0px 10px;
-    cursor:pointer;
+ .nav {
+     display: flex;
+     list-style: none;
  }
 
- .content{
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
+ .nav li {
+     padding: 10px 30px;
+     margin: 0px 10px;
+     cursor: pointer;
  }
 
- h3{
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-    line-height: 35px;
-    max-width: 500px;
+ .content {
+     position: absolute;
+     top: 50%;
+     left: 10%;
+     transform: translateY(-50%);
  }
 
- h1{
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
+ h3 {
+     font-size: 1.6rem;
+     font-weight: 500;
+     margin-bottom: 10px;
+     line-height: 35px;
+     max-width: 500px;
  }
 
- p{
-    font-size: 1.3;
-    font-weight: 500;
-    margin-bottom: 10px;
-    line-height: 35px;
-    max-width: 500px ;
+ h1 {
+     font-size: 2.5rem;
+     font-weight: 600;
+     margin-bottom: 10px;
+     letter-spacing: 2px;
  }
 
- .menu{
-    position: fixed;
-    background: white;
-    bottom: -10px;
-    left: 0;
-    width: 70%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
-    25px 15px 35px rgb(0 0 0 / 25%),
-    inset 5px 0px 10px rgb(0 0 0/25%),
-    inset -5px 5px 10px rgb(0 0 0/50%),
-    inset 30px 10px 35px 10px rgb(255 255 255/20%);
-    border-top-right-radius: 15px;
+ p {
+     font-size: 1.3;
+     font-weight: 500;
+     margin-bottom: 10px;
+     line-height: 35px;
+     max-width: 500px;
  }
 
- .menu::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -150%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 50px;
-    background-color: #242931;
-    box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
-    25px 15px 35px rgb(0 0 0 / 25%),
-    inset 5px 0px 10px rgb(0 0 0/50%),
-    inset -5px 5px 10px rgb(0 0 0/50%),
-    inset 30px 10px 35px 10px rgb(255 255 255/20%);
-    transition: 2s;
+ .menu {
+     position: fixed;
+     background: white;
+     bottom: -10px;
+     left: 0;
+     width: 70%;
+     height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
+         25px 15px 35px rgb(0 0 0 / 25%),
+         inset 5px 0px 10px rgb(0 0 0/25%),
+         inset -5px 5px 10px rgb(0 0 0/50%),
+         inset 30px 10px 35px 10px rgb(255 255 255/20%);
+     border-top-right-radius: 15px;
  }
 
- .menu:hover::before{
-    left: 50% ;
+ .menu::before {
+     content: '';
+     position: absolute;
+     top: 50%;
+     left: -150%;
+     transform: translate(-50%, -50%);
+     width: 100%;
+     height: 50px;
+     background-color: #242931;
+     box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
+         25px 15px 35px rgb(0 0 0 / 25%),
+         inset 5px 0px 10px rgb(0 0 0/50%),
+         inset -5px 5px 10px rgb(0 0 0/50%),
+         inset 30px 10px 35px 10px rgb(255 255 255/20%);
+     transition: 2s;
  }
 
- .first-menu{
-    position: fixed;
-    left: 50px;
- }
-.menu ion-icon:hover{
-    color: white;
-    background-color: #242931;
-    box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
-    25px 15px 35px rgb(0 0 0 / 25%),
-    inset 5px 0px 10px rgb(0 0 0/50%),
-    inset -5px 5px 10px rgb(0 0 0/50%),
-    inset 30px 10px 35px 10px rgb(255 255 255/20%);
-    transform: translateY(-10px);
-}
- .menu ion-icon{
-    font-size: 2rem;
-    color: #242931;
-    margin: 0 10px;
-    padding: 20px 20px 30px 20px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    background-color: white;
-    box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
-    25px 15px 35px rgb(0 0 0 / 25%),
-    inset 5px 0px 10px rgb(0 0 0/25%),
-    inset -5px 5px 10px rgb(0 0 0/50%),
-    inset 30px 10px 35px 10px rgb(255 255 255/20%);
-    transition: .4s;
+ .menu:hover::before {
+     left: 50%;
+     border-top-right-radius: 15px;
  }
 
- .menu-icon{
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    bottom: 0px;
-    align-items: center;
-    left: 20%;
+ .first-menu {
+     position: fixed;
+     left: 50px;
+ }
+
+ .menu ion-icon:hover {
+     color: white;
+     background-color: #242931;
+     box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
+         25px 15px 35px rgb(0 0 0 / 25%),
+         inset 5px 0px 10px rgb(0 0 0/50%),
+         inset -5px 5px 10px rgb(0 0 0/50%),
+         inset 30px 10px 35px 10px rgb(255 255 255/20%);
+     transform: translateY(-10px);
+ }
+
+ .menu ion-icon {
+     font-size: 2rem;
+     color: #242931;
+     margin: 0 10px;
+     padding: 20px 20px 30px 20px;
+     border-top-left-radius: 30px;
+     border-top-right-radius: 30px;
+     background-color: white;
+     box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
+         25px 15px 35px rgb(0 0 0 / 25%),
+         inset 5px 0px 10px rgb(0 0 0/25%),
+         inset -5px 5px 10px rgb(0 0 0/50%),
+         inset 30px 10px 35px 10px rgb(255 255 255/20%);
+     transition: .4s;
+ }
+
+ .menu-icon {
+     position: fixed;
+     display: flex;
+     justify-content: center;
+     /* bottom: 0px; */
+     align-items: center;
+     left: 20%;
  }
 
 
- .hero::before{
-    content: '';
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    transform: translate(-50%,-50%) rotate(20deg);
-    width: 150px;
-    height: 150px;
-    box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
-    25px 15px 35px rgb(0 0 0 / 25%),
-    inset 5px 0px 10px rgb(0 0 0/50%),
-    inset -5px 5px 10px rgb(0 0 0/50%),
-    inset 30px 10px 35px 10px rgb(255 255 255/20%);
-    background: #242931;
-    border-radius: 20px;
+ .hero::before {
+     content: '';
+     position: absolute;
+     top: 25%;
+     left: 25%;
+     transform: translate(-50%, -50%) rotate(20deg);
+     width: 150px;
+     height: 150px;
+     box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
+         25px 15px 35px rgb(0 0 0 / 25%),
+         inset 5px 0px 10px rgb(0 0 0/50%),
+         inset -5px 5px 10px rgb(0 0 0/50%),
+         inset 30px 10px 35px 10px rgb(255 255 255/20%);
+     background: #242931;
+     border-radius: 20px;
+     animation: kimi 5s linear forwards infinite;
  }
- .hero::after{
-    content: '';
-    position: absolute;
-    top: 75%;
-    right : 16%;
-    transform: translate(-50%,-50%) rotate(20deg);
-    width: 150px;
-    height: 150px;
-    box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
-    25px 15px 35px rgb(0 0 0 / 25%),
-    inset 5px 0px 10px rgb(0 0 0/50%),
-    inset -5px 5px 10px rgb(0 0 0/50%),
-    inset 30px 10px 35px 10px rgb(255 255 255/20%);
-    background: #242931;
-    border-radius: 50% ;
+
+ @keyframes kimi {
+     0% {
+         transform: translate(-50%, -50%) rotate(20deg);
+     }
+
+     25% {
+         transform: translate(-200%, 50%) rotate(60deg);
+     }
+
+     50% {
+         transform: translate(520%, 60%) rotate(90deg);
+     }
+
+     52% {
+         transform: translate(520%, 60%) rotate(90deg) scale(1.5);
+     }
+
+     75% {
+         transform: translate(420%, -80%) rotate(40deg) scale(1);
+     }
+
+     76% {
+        transform: translate(420%, -80%) rotate(40deg) scale(2);
+     }
+
+     100% {
+         transform: translate(-50%, -50%) rotate(20deg);
+     }
+ }
+
+
+
+ .hero::after {
+     content: '';
+     position: absolute;
+     top: 75%;
+     right: 16%;
+     transform: translate(-50%, -50%) rotate(20deg);
+     width: 150px;
+     height: 150px;
+     box-shadow: 25px 15px 35px rgb(0 0 0 / 25%),
+         25px 15px 35px rgb(0 0 0 / 25%),
+         inset 5px 0px 10px rgb(0 0 0/50%),
+         inset -5px 5px 10px rgb(0 0 0/50%),
+         inset 30px 10px 35px 10px rgb(255 255 255/20%);
+     background: #242931;
+     border-radius: 50%;
+     animation: kini 5s linear forwards infinite;
+ }
+
+ @keyframes kini{
+    0% {
+        transform: translate(-50%, -50%) rotate(20deg);
+    }
+
+    25% {
+        transform: translate(150%, -220%) rotate(60deg);
+    }
+
+    50% {
+        transform: translate(-300%, -330%) rotate(90deg);
+    }
+
+    52% {
+        transform: translate(-300%, -330%) rotate(90deg) scale(1.5);
+    }
+
+    75% {
+        transform: translate(-420%, -140%) rotate(40deg) scale(1);
+    }
+
+    76% {
+       transform: translate(-420%, -140%) rotate(40deg) scale(2);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(20deg);
+    }
  }
